@@ -1,29 +1,25 @@
-# 🏦 Loan Default Prediction System
+🏦 Loan Default Prediction System
 
-## 📌 Project Overview
+📌 Project Overview
 
 This is an end-to-end Machine Learning project that predicts whether a customer is likely to default on a loan using customer financial and personal information.
 
 The project covers the complete workflow from data understanding and preprocessing to model training and building an interactive Streamlit web application.
 
----
-
-## 🎯 Problem Statement
+🎯 Problem Statement
 
 Financial institutions face significant risks when customers fail to repay loans. Identifying high-risk customers early can reduce financial losses and improve lending decisions.
 
 The objective of this project is to classify customers into:
 
-* Likely Default
-* Likely Non-default
+• Likely Default
+• Likely Non-default
 
----
-
-## 📂 Dataset Information
+📂 Dataset Information
 
 The dataset contains customer financial and personal information.
 
-### Numerical Features
+Numerical Features
 
 * Age
 * Income
@@ -35,7 +31,7 @@ The dataset contains customer financial and personal information.
 * Loan Term
 * DTI Ratio
 
-### Categorical Features
+Categorical Features
 
 * Education
 * Employment Type
@@ -49,17 +45,15 @@ Removed feature:
 
 * LoanID
 
----
+🔄 Project Workflow
 
-## 🔄 Project Workflow
-
-### Step 1: Data Understanding
+Step 1: Data Understanding
 
 * Loaded dataset
 * Explored dataset structure
 * Removed unnecessary feature (LoanID)
 
-### Step 2: Exploratory Data Analysis (EDA)
+Step 2: Exploratory Data Analysis (EDA)
 
 Performed EDA to identify patterns and customer behavior.
 
@@ -70,7 +64,7 @@ Key insights:
 * Employment type influenced customer risk
 * Loan purpose affected loan behavior
 
-### Step 3: Data Preprocessing
+Step 3: Data Preprocessing
 
 Created a preprocessing pipeline using:
 
@@ -78,7 +72,7 @@ Created a preprocessing pipeline using:
 * Categorical encoding
 * Pipeline approach for reproducibility
 
-### Step 4: Model Training
+Step 4: Model Training
 
 Performed:
 
@@ -88,7 +82,7 @@ Performed:
 * Performance evaluation
 * Model experimentation
 
-### Step 5: Model Improvement
+Step 5: Model Improvement
 
 Instead of focusing only on accuracy, multiple evaluation metrics were analyzed:
 
@@ -106,35 +100,30 @@ Improvements included:
 * Performance analysis
 * Model experimentation
 
----
-
-## 📊 Final Model Performance
+📊 Final Model Performance
 
 Final Model:
 
-**Logistic Regression**
+Logistic Regression
 
 Performance Metrics:
 
-* Accuracy: **67.65%**
-* Recall: **69.97%**
-* F1 Score: **33.44%**
-* ROC-AUC Score: **68.66%**
+* Accuracy: 67.65%
+* Recall: 69.97%
+* F1 Score: 33.44%
+* ROC-AUC Score: 68.66%
 
 Confusion Matrix:
 
-| Actual / Predicted | Non-default | Default |
-| ------------------ | ----------- | ------- |
-| Non-default        | 30400       | 14739   |
-| Default            | 1781        | 4150    |
+Actual / Predicted | Non-default | Default
+Non-default | 30400 | 14739
+Default | 1781 | 4150
 
 Observation:
 
 The model achieved a relatively high Recall (~70%), meaning it successfully identified a large proportion of risky customers. Since the business objective prioritizes identifying potential defaulters, recall was considered an important evaluation metric rather than relying only on overall accuracy.
 
----
-
-## 💻 Web Application Features
+💻 Web Application Features
 
 ✅ Interactive Streamlit UI
 
@@ -146,9 +135,7 @@ The model achieved a relatively high Recall (~70%), meaning it successfully iden
 
 ✅ Customer risk prediction system
 
----
-
-## 🛠 Technologies Used
+🛠 Technologies Used
 
 * Python
 * Pandas
@@ -157,23 +144,26 @@ The model achieved a relatively high Recall (~70%), meaning it successfully iden
 * Streamlit
 * Pickle
 
----
+🌐 Live Demo
 
-## ▶️ Run Project Locally
+Try the deployed application here:
 
-Install requirements:
+https://loan-default-prediction-systemgit-7fdwrjwrpm6fy83tj5ehqv.streamlit.app/
 
-```bash
+▶️ Run Project Locally
+
+1. Clone repository:
+
+git clone https://github.com/TanviUkani/Loan-Default-Prediction-System.git
+
+2. Install requirements:
+
 pip install -r requirements.txt
-```
 
-Run application:
+3. Run application:
 
-```bash
 streamlit run app.py
-```
 
-
-## 👤 Author
+👤 Author
 
 Tanvi Ukani
